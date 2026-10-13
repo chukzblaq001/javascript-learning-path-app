@@ -1,0 +1,58 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Learning App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>JS Path</h1>
+        <p>Learn JavaScript step by step for free</p>
+    </header>
+
+    <nav>
+        <button onclick="showHome()">Home</button>
+        <button onclick="showLessons()">Lessons</button>
+        <button onclick="showQuiz()">Quiz</button>
+    </nav>
+
+    <main>
+        <section id="home">
+            <h2>Welcome to JS Path!</h2>
+            <p>
+                Learn JavaScript from beginner to advanced level
+                with simple notes, examples and quizzes.
+            </p>
+            <button onclick="showLessons()">Start Learning</button>
+
+            <h3>Your Progress</h3>
+            <p id="progress">Lessons completed: 0</p>
+        </section>
+
+        <section id="lessons" class="hidden">
+            <h2>JavaScript Lessons</h2>
+            <div id="lesson-list"></div>
+            <div id="lesson-content"></div>
+        </section>
+
+        <section id="quiz" class="hidden">
+            <h2>JavaScript Quiz</h2>
+            <p id="question"></p>
+            <div id="answers"></div>
+            <p id="quiz-result"></p>
+            <button onclick="nextQuestion()">Next Question</button>
+        </section>
+    </main>
+
+    <footer>
+        <p>JS Path &copy; 2026 | Learn JavaScript for Free</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+```
